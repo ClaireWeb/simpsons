@@ -5,14 +5,14 @@ function QuoteCard(props) {
   return (
     <figure className="QuoteCard">
       <img
-        src={props.img}
-        alt={props.fullname}
+        src={props.image}
+        alt={props.name}
       />
       <figcaption>
         <blockquote>
           {props.quote}
         </blockquote>
-        <cite>{props.fullname}</cite>
+        <cite>{props.name}</cite>
       </figcaption>
     </figure>
   );
