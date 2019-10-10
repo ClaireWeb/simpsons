@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from './components/Navbar';
 import QuoteList from './components/QuoteList';
-import Lamp from './Lamp';
 import './App.css';
 
 class App extends Component {
@@ -31,8 +30,6 @@ class App extends Component {
             />
           </div>
         </div>
-        {/* <Lamp on />
-        <Lamp /> */}
         <QuoteList />
       </div>
     )
