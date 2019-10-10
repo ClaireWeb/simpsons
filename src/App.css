@@ -34,7 +34,7 @@
   color: #FFF;
 }
 .App-rolling img {
-  width: 20vmin;
+  width: 30vmin;
   margin: 30px;
 }
 @keyframes rolling {
