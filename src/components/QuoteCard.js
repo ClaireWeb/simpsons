@@ -6,13 +6,13 @@ function QuoteCard(props) {
     <figure className="QuoteCard">
       <img
         src={props.image}
-        alt={props.name}
+        alt={props.character}
       />
       <figcaption>
         <blockquote>
           {props.quote}
         </blockquote>
-        <cite>{props.name}</cite>
+        <cite>{props.character}</cite>
       </figcaption>
     </figure>
   );

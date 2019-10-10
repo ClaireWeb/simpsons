@@ -1,5 +1,4 @@
 // src/components/QuoteList.js
-import React from "react";
 import QuoteCard from './QuoteCard'
 
 // An array of objects
@@ -32,12 +31,8 @@ const quotes = [
   }
 ];
 
-const QuoteList = () => (
-  <div>
-    {quotes.map(item => (
-  <QuoteCard quote={item.quote} image={item.image} character={item.character} />
-  ))}
-  </div>
-);
+const QuoteList = () => {
+  return quotes.map(item => QuoteCard(item))
+}
 
 export default QuoteList;
