@@ -17,6 +17,37 @@
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.App-rolling button {
+  margin: 30px 0;
+  padding: 10px;
+  width: 100px;
+  height: 60px;
+  border-radius: 5px;
+  border: 1px solid #f7b95d;
+  font-weight: bold;
+  color: #5e5e5e;
+  font-size: 1rem;
+  background: #FFF;
+}
+.App-rolling button:hover {
+  background: #f7b95d;
+  color: #FFF;
+}
+.App-rolling img {
+  width: 20vmin;
+  margin: 30px;
+}
+@keyframes rolling {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.App-rolling img.works {
+    -webkit-animation: rolling 5s infinite; /* Safari 4+ */
+    -moz-animation: rolling 5s infinite; /* Fx 5+ */
+    -o-animation: rolling 5s infinite; /* Opera 12+ */
+    animation: rolling 5s infinite; /* IE 10+, Fx 29+ */
 }
