@@ -4,9 +4,9 @@ import QuoteList from './components/QuoteList';
 import './App.css';
 
 class App extends Component {
-    state = {
-      working: true
-    }
+  state = {
+    working: true
+  }
   handleClick = () => {
     this.setState({ working: !this.state.working });
   }
