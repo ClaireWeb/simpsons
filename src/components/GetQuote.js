@@ -27,9 +27,9 @@ class GetQuote extends React.Component {
     return (
       <div>
         <button onClick={this.btnQuote}>Get a random character !</button>      
-        <p key={this.state.aSimpson.id}> Name : {this.state.aSimpson.character}</p>
-        <p> Quote : {this.state.aSimpson.quote}</p>
+        <p className="quote">{this.state.aSimpson.quote}</p>
         <img className="character-img" src={this.state.aSimpson.image} alt={this.state.aSimpson.character}/>
+        <p key={this.state.aSimpson.character}>{this.state.aSimpson.character}</p>
       </div>
     )
   }
