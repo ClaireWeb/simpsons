@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+
+import GetQuote from './components/GetQuote';
 import Navbar from './components/Navbar';
 import QuoteList from './components/QuoteList';
+
 import './App.css';
 
 class App extends Component {
@@ -15,6 +18,7 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
+        <GetQuote />
         <div className="App-rolling">
           <button 
             className={willWork}
