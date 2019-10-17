@@ -4,10 +4,10 @@ import './GetQuote.css'
 class GetQuote extends React.Component {
   state = {
     characters: [],
-    aSimpson: {}
+    starChar: {}
   }
   getQuote = () => {
-    fetch("https://thesimpsonsquoteapi.glitch.me/quotes?count=50")
+    fetch("https://melroune.github.io/starwars-api/api/all.json")
       .then(res => res.json())
       .then(res => this.setState({characters: res}))
   }
@@ -20,16 +20,16 @@ class GetQuote extends React.Component {
     let item = this.state.characters[
       Math.floor(Math.random() * this.state.characters.length)
     ]
-    return this.setState({ aSimpson: item })
+    return this.setState({ starChar: item })
   }
 
   render() {
     return (
       <div>
-        <button onClick={this.btnQuote}>Get a random character !</button>      
-        <p className="quote">{this.state.aSimpson.quote}</p>
-        <img className="character-img" src={this.state.aSimpson.image} alt={this.state.aSimpson.character}/>
-        <p key={this.state.aSimpson.character}>{this.state.aSimpson.character}</p>
+        <button onClick={this.btnQuote}>Someone's lost in Springfield! Click here to discover it's homeworld ! </button>      
+        <p className="quote">{this.state.starChar.homeworld}</p>
+        <img className="character-img" src={this.state.starChar.image} alt={this.state.starChar.name}/>
+        <p key={this.state.starChar.id}>{this.state.starChar.name}</p>
       </div>
     )
   }
