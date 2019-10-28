@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import GetQuote from './components/GetQuote';
 import Navbar from './components/Navbar';
+import QuoteForm from './components/QuoteForm'
 import QuoteList from './components/QuoteList';
 
 import './App.css';
@@ -34,6 +35,7 @@ class App extends Component {
             />
           </div>
         </div>
+        <QuoteForm />
         <QuoteList />
       </div>
     )
